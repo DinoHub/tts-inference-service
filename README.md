@@ -1,6 +1,6 @@
-# ASR Inference Service
+# TTS Inference Service
 
-ASR Inference Service for AI App Store
+TTS Inference Service for AI App Store
 
 ## Build
 To build the docker container, run
@@ -11,7 +11,7 @@ make build
 ### Push to Registry
 To push the image to a registry, first build the image, then run
 ```sh
-docker tag asr-inference-service:1.0.0 <REGISTRY>/<REPO>/asr-inference-service:1.0.0
+docker tag tts-inference-service:1.0.0 <REGISTRY>/<REPO>/tts-inference-service:1.0.0
 ```
 
 If not logged in to the registry, run
@@ -21,7 +21,7 @@ docker login -u <USERNAME> -p <PASSWORD> <REGISTRY>
 
 Then, push the tagged image to a registry
 ```sh
-docker push <REGISTRY>/<REPO>/asr-inference-service:1.0.0
+docker push <REGISTRY>/<REPO>/tts-inference-service:1.0.0
 ```
 
 ## Run Locally
@@ -36,7 +36,7 @@ First, make sure your image is pushed to the registry.
 ### Deployment on AI App Store
 Check out the AI App Store documentation for full details, but in general:
 1. Create/edit a model card
-2. Pass the docker image URI (e.g `<REGISTRY>/<REPO>/asr-inference-service:1.0.0`) when creating/editing the inference service
+2. Pass the docker image URI (e.g `<REGISTRY>/<REPO>/tts-inference-service:1.0.0`) when creating/editing the inference service
 
 ### Other Deployment Options
 There are other potential deployment options, including:
