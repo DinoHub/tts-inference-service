@@ -8,6 +8,13 @@ To build the docker container, run
 make build
 ```
 
+## Pretrained Models
+Download pretrained model for both FastPitch and HifiGAN here:
+- [FastPitch](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_en_fastpitch/files?version=1.8.1)
+- [HifiGAN](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_hifigan)
+
+Create a `models` folder and place them in there.
+
 ### Push to Registry
 To push the image to a registry, first build the image, then run
 ```sh
